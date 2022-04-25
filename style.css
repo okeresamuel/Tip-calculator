@@ -1,0 +1,158 @@
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    background-color:black;
+    font-family: 'Marck Script', cursive;
+}
+.tip_picture{
+    background-image: url("https://st2.depositphotos.com/3591429/5245/i/600/depositphotos_52454503-stock-photo-arms-raised-holding-word-tips.jpg");
+    background-repeat: no-repeat;
+    background-size:100px;
+    background-position:center;
+    width:100px;
+    height:44px;
+    position:absolute;
+    top:6%;
+    left:52px;
+    bottom:50%;
+    transform: translate(-50%,-50%);
+    z-index:2;
+    border-bottom-right-radius: 10px;
+}
+.flip_coin{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    position:relative;
+    top:10px;
+}
+.tip_icon,.person_icon,.sum_icon{
+    width:30px;
+    height:30px;
+    margin-top:5px;
+    position:relative;
+    top:10px;
+}
+.sum_icon{
+    left:-5px;
+}
+@media (max-width:500px){
+.sum_icon{
+    left:5px;
+}
+}
+.spin{
+    animation-name: load;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+}
+@keyframes load{
+    100%{transform: rotate(360deg);}
+}
+.first_outerbox{
+    background-color:whitesmoke;
+    color:black;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    height: 27em;
+    width:60%;
+    border-radius:4px;
+     text-align: center;
+}
+@media (max-width:500px){
+  .first_outerbox{
+      width:95%;
+  }
+}
+.first_outerbox::after{
+    content: "🌸";
+    width:100px;
+    height:100px;
+    position: absolute;
+    left:-25px;
+    bottom:-68px;
+    transform: rotate(23deg);
+}
+
+
+#all_inputcontainer{
+    display:grid;
+     gap: 10px;
+    
+}
+#inputOne,#inputTwo,#inputThree,#inputFour{
+    margin:10px;
+    padding: 10px;
+    background-color: transparent;
+    border: solid rgba(14, 112, 112, 0.397);
+    border-radius:10px;
+    border-top-left-radius: 30px;
+    border-width: 2px;
+    outline: none;
+    text-align:center;
+}
+
+#inputThree{
+    padding: 10px 16px 10px 38px;
+}
+
+.header_general{
+  display:flex;
+  justify-content: space-evenly;
+}
+.time{
+    color:rgb(124, 106, 2);
+    font-size:20px;
+    margin-bottom: -25px;
+    background-color:rgba(14, 112, 112, 0.397);
+    max-width: 150px;
+    margin-left: auto;
+    margin-bottom: auto;
+    border-radius:10px;
+    border-top-left-radius: 30px;
+}
+.tip_text{
+    font-size:20px;
+}
+.emojistyle{
+  opacity:0;
+  transition:1s ease;
+}
+.rotate_tip_icon{
+    transform:rotate(23deg);
+    transition: 200ms ease-in;
+}
+.trans{
+    transition:5s ease-in;
+}
+.nav_section_style{
+    background-color:rgba(0, 0, 139, 0.219);
+    padding-top:10px;
+}
+.circle_container{
+     background-color:rgb(252, 50, 151);
+     background-image: linear-gradient(20deg, blue, rgb(223, 61, 61)); 
+     width:43px;
+     height:3px;
+     padding:10px;
+     margin-left:auto;
+     border-radius:50px;
+     position:relative;
+}
+.circle{
+   background-color:#FFFF00;
+   width:22px;
+   height:22px;
+   transform: translateX(-11px);
+   border-radius:50%;
+   position:absolute;
+   top:1px;
+   left:12px;
+   transition:1s;
+}
+[offtoggle]{
+    transform: translateX(29px);
+}
