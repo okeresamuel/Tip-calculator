@@ -1,0 +1,2 @@
+# Tip-calculator
+Calculates tips 🖩🖩🖩
