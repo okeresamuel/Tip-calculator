@@ -141,6 +141,8 @@ body{
      margin-left:auto;
      border-radius:50px;
      position:relative;
+     margin-top:40px;
+     margin-right:9px;
 }
 .circle{
    background-color:#FFFF00;
