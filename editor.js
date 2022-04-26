@@ -1,4 +1,4 @@
- let btn = document.querySelector("#btn")
+  let btn = document.querySelector("#btn")
  let sumIcon = document.querySelector(".sum_icon")
  let inputOne = document.querySelector("#inputOne")
  let inputTwo = document.querySelector("#inputTwo")
