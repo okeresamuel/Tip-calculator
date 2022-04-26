@@ -16,7 +16,7 @@
    let cost = parseFloat(inputOne)
    let tip = parseFloat(inputTwo) /100
    let people = parseFloat(inputThree)
-   let total = ( `${cost} + ${cost} * tip)/people
+   let total = ( cost + cost * tip)/people
    inputFour.value= `$${total.toFixed(2)}`;
    sumIcon.classList.add("spin")
   const executeSpin = ()=>{
