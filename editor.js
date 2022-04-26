@@ -1,4 +1,4 @@
-     let btn = document.querySelector("#btn")
+ let btn = document.querySelector("#btn")
  let sumIcon = document.querySelector(".sum_icon")
  let inputOne = document.querySelector("#inputOne")
  let inputTwo = document.querySelector("#inputTwo")
@@ -13,9 +13,9 @@
    inputOne = (form.elements.inputOne.value)
    inputTwo = (form.elements.inputTwo.value)
    inputThree = (form.elements.inputTwo.value)
-   let cost = parseInt(inputOne)
-   let tip = parseInt(inputTwo) /100
-   let people = parseInt(inputThree)
+   let cost = parseFloat(inputOne)
+   let tip = parseFloat(inputTwo) /100
+   let people = parseFloat(inputThree)
    let total = ( cost + cost * tip)/people
    inputFour.value= `$${total.toFixed(2)}`;
    sumIcon.classList.add("spin")
