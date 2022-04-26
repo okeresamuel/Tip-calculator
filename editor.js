@@ -12,7 +12,7 @@
  inputThree.addEventListener("change", function(){
    inputOne = (form.elements.inputOne.value)
    inputTwo = (form.elements.inputTwo.value)
-   inputThree = (form.elements.inputTwo.value)
+   inputThree = (form.elements.inputThree.value)
    let cost = parseFloat(inputOne)
    let tip = parseFloat(inputTwo) /100
    let people = parseFloat(inputThree)
